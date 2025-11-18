@@ -15,7 +15,7 @@ def register():
     return render_template('register.html')
 
 
-# Display stored registrations (students will add JSON reading code here)
+# Display stored registrations
 @app.route('/view')
 def view_registrations():
     with open('registrations.json', 'r') as file:
@@ -27,10 +27,11 @@ def submit_form():
     name = request.form['name']
     country = request.form['country']
     age = request.form['age']
-    gender = request.form['male_gender']
-
-
-
+    gender = request.form['gender']
+    date_of_birth = request.form['date_of_birth']
+    phone_number = request.form['phone_number']
+    family_size = request.form['family_size']
+    medical_con = request.form['Medical_con']
     # Check if file exists
     if os.path.exists('registrations.json'):
         with open('registrations.json', 'r') as file:
@@ -38,7 +39,7 @@ def submit_form():
     else:
         data = []
     # Add the new registration
-    data.append({'name': name, 'country': country, 'age': age, 'gender': gender})
+    data.append({'name': name, 'country': country, 'age': age, 'gender': gender, 'date_of_birth': date_of_birth, 'phone_number': phone_number, 'family_size': family_size, 'medical_con': medical_con})
 
     # Save all registrations back to the file
     with open('registrations.json', 'w') as file:

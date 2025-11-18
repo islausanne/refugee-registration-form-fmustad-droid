@@ -2,18 +2,50 @@
 {% block content %}
 <h2>Refugee Registration Form</h2>
 <form method="POST" action="{{ url_for('submit_form') }}">
-  <p><input type="text" name="name" placeholder="Full Name" required></p>
-  <p><input type="text" name="country" placeholder="Country of Origin" required></p>
-  <p><input type="number" name="age" placeholder="Age" required></p>
+  <p>
+      <h5>Full Name:</h5>
+      <input type="text" name="name" placeholder="Full Name" required>
+  </p>
+  <p>
+      <h5>Nationality:</h5>
+      <input type="text" name="country" placeholder="Country of Origin" required>
+  </p>
+  <p>
+      <h5>Age:</h5>
+      <input type="number" name="age" placeholder="Age" required>
+  </p>
+  <p>
+      <h5>Gender:</h5>
     <label class="container">Male
-  <input name="male_gender" type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-    </label>
-    <label class="container">Female
-  <input name="female_gender" type="checkbox">
+  <input  name="gender" type="radio" value = 'male'">
   <span class="checkmark"></span>
     </label>
 
+    <label class="container">Female
+  <input name="gender" type="radio" value = 'female'>
+  <span class="checkmark"></span>
+    </label>
+</p>
+    <p>
+        <h5>Date of Birth:</h5>
+        <label for= "date of birth"></label>
+        <input type="date" id="date of birth" name="date_of_birth" >
+    </p>
+
+    <p>
+        <h5>Phone Number:</h5>
+        <input type="number" name="phone_number" placeholder="(+00) 00 000 00 00" required>
+    </p>
+
+    <p>
+        <h5>Family size:</h5>
+        <input type="number" name="family_size" placeholder="Number of Family Members" required>
+    </p>
+
+    <p>
+      <h5>Medical Conditions:</h5>
+      <input type="text" name="Medical_con" placeholder="Medical Conditions" required>
+    </p>
 
   <p><button type="submit">Submit</button></p>
 </form>
