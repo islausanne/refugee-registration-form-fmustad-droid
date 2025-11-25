@@ -18,12 +18,16 @@ def register():
 # Display stored registrations
 @app.route('/view')
 def view_registrations():
+    # opens json file in read mode
     with open('registrations.json', 'r') as file:
+        #loads the data
         data = json.load(file)
+
     return render_template('view.html', registrations=data)
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
+   # All the fields
     name = request.form['name']
     country = request.form['country']
     age = request.form['age']
@@ -32,6 +36,7 @@ def submit_form():
     phone_number = request.form['phone_number']
     family_size = request.form['family_size']
     medical_con = request.form['Medical_con']
+
     # Check if file exists
     if os.path.exists('registrations.json'):
         with open('registrations.json', 'r') as file:

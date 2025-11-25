@@ -1,5 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
+
+<style>
+h2{
+    text-align: center;
+    }
+form{
+    text-align: center;
+    }
+</style>
 <h2>Refugee Registration Form</h2>
 <form method="POST" action="{{ url_for('submit_form') }}">
   <p>
@@ -17,7 +26,7 @@
   <p>
       <h5>Gender:</h5>
     <label class="container">Male
-  <input  name="gender" type="radio" value = 'male'">
+  <input  name="gender" type="radio" value = 'male'>
   <span class="checkmark"></span>
     </label>
 
