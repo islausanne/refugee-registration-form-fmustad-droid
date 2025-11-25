@@ -1,0 +1,180 @@
+[
+  {
+    "name": "finn",
+    "country": "argentina",
+    "age": "16"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "sport": "football"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "on"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "on"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "male_gender": "on",
+    "female_gender": "on"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "on"
+  },
+  {
+    "name": "pibhrpig",
+    "country": " colombia ",
+    "age": "16",
+    "gender": "on"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "on"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male"
+  },
+  {
+    "name": "finn",
+    "country": " colombia ",
+    "age": "16",
+    "gender": "female"
+  },
+  {
+    "name": "finn mustad",
+    "country": " colombia ",
+    "age": "21",
+    "gender": "male",
+    "date_of_birth": "2025-10-29"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date of birth": "2025-10-30"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-11-07"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-11-06",
+    "phone_number": "41762045949"
+  },
+  {
+    "name": "pibhrpig",
+    "country": "cerf",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-11-06",
+    "phone_number": "41762035047",
+    "family_size": "5"
+  },
+  {
+    "name": "finn",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-11-14",
+    "phone_number": "230924234",
+    "family_size": "5",
+    "Medical": ""
+  },
+  {
+    "name": "f",
+    "country": "f",
+    "age": "4",
+    "gender": "male",
+    "date_of_birth": "0004-03-02",
+    "phone_number": "2",
+    "family_size": "2",
+    "Medical": "diabetes"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-10-31",
+    "phone_number": "41743029045",
+    "family_size": "4",
+    "Medical": "none"
+  },
+  {
+    "name": "finn mustad",
+    "country": " colombia ",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-10-31",
+    "phone_number": "300390909",
+    "family_size": "3",
+    "Medical": "none"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2025-11-19",
+    "phone_number": "565645645",
+    "family_size": "6",
+    "Medical_con": "none"
+  },
+  {
+    "name": "d",
+    "country": "wfq",
+    "age": "324",
+    "gender": "male",
+    "date_of_birth": "0031-02-23",
+    "phone_number": "123123121",
+    "family_size": "2",
+    "medical_con": "diabetes"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "1009-09-10",
+    "phone_number": "41787858778",
+    "family_size": "5",
+    "medical_con": "diabetes"
+  }
+]
