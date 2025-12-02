@@ -176,5 +176,25 @@
     "phone_number": "41787858778",
     "family_size": "5",
     "medical_con": "diabetes"
+  },
+  {
+    "name": "finn mustad",
+    "country": "argentina",
+    "age": "16",
+    "gender": "male",
+    "date_of_birth": "2008-08-14",
+    "phone_number": "41762035047",
+    "family_size": "6",
+    "medical_con": "diabetes"
+  },
+  {
+    "name": "324232",
+    "country": "23423",
+    "age": "2342",
+    "gender": "male",
+    "date_of_birth": "242342-01-12",
+    "phone_number": "324234",
+    "family_size": "32423",
+    "medical_con": "234234"
   }
 ]

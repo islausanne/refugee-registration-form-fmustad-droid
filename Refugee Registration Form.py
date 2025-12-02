@@ -6,10 +6,12 @@ import os
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # Needed for flash messages
 
+
+# Home page
 @app.route('/')
 def index():
     return render_template('index.html')
-
+ # Register page
 @app.route('/register')
 def register():
     return render_template('register.html')
@@ -27,7 +29,7 @@ def view_registrations():
 
 @app.route('/submit', methods=['POST'])
 def submit_form():
-   # All the fields
+   #recives submitted data and stores in a vairable.
     name = request.form['name']
     country = request.form['country']
     age = request.form['age']
