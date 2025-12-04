@@ -37,18 +37,41 @@ def submit_form():
     date_of_birth = request.form['date_of_birth']
     phone_number = request.form['phone_number']
     family_size = request.form['family_size']
-    medical_con = request.form['Medical_con']
+    medical_con = request.form['medical_con']
 
     #Validation
+   #checks if name is too short to be a name
     if len(name) <=2 or name.isdigit():
-        flash('Full Name is invalid','error')
-        return redirect(url_for('register'))
+        flash('* Full Name is invalid','error')
+        return render_template("register.html",
+                               name=name, country=country, age=age, #makes sure values aren't erased after validation
+                       gender=gender, date_of_birth=date_of_birth,
+                       phone_number=phone_number, family_size=family_size,
+                       medical_con=medical_con)
+   #checks if country is too short
     if len(country) <=2 or name.isdigit():
-       flash('Country is invalid(no abbreviations)','error')
-       return redirect(url_for('register'))
-    if age <0 or age >120 or not age.isdigit():
-        flash('Age is invalid','error')
-        return redirect(url_for('register'))
+       flash('* Country is invalid(no abbreviations)','error')
+       return render_template("register.html",
+                              name=name, country=country, age=age, #makes sure values aren't erased after validation
+                       gender=gender, date_of_birth=date_of_birth,
+                       phone_number=phone_number, family_size=family_size,
+                       medical_con=medical_con)
+
+   #checks for a realistic age and makes sure there are only numbers
+    if int(age) <0 or int(age) >120 or not age.isdigit():
+        flash('* Age is invalid','error')
+        return render_template("register.html",
+                               name=name, country=country, age=age, #makes sure values aren't erased after validation
+                       gender=gender, date_of_birth=date_of_birth,
+                       phone_number=phone_number, family_size=family_size,
+                       medical_con=medical_con)
+    if len(phone_number)<7 or phone_number[0] != "+":
+        flash('* Phone number is invalid','error')
+        return render_template("register.html",
+                               name=name, country=country, age=age, #makes sure values aren't erased after validation
+                       gender=gender, date_of_birth=date_of_birth,
+                       phone_number=phone_number, family_size=family_size,
+                       medical_con=medical_con)
 
 
     # Check if file exists
