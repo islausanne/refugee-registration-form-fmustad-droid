@@ -26,7 +26,7 @@ def view_registrations():
         data = json.load(file)
 
     return render_template('view.html', registrations=data)
-
+#routes to this function once user submits the form
 @app.route('/submit', methods=['POST'])
 def submit_form():
    #recives submitted data and stores in a vairable.
@@ -39,12 +39,25 @@ def submit_form():
     family_size = request.form['family_size']
     medical_con = request.form['Medical_con']
 
+    #Validation
+    if len(name) <=2 or name.isdigit():
+        flash('Full Name is invalid','error')
+        return redirect(url_for('register'))
+    if len(country) <=2 or name.isdigit():
+       flash('Country is invalid(no abbreviations)','error')
+       return redirect(url_for('register'))
+    if age <0 or age >120 or not age.isdigit():
+        flash('Age is invalid','error')
+        return redirect(url_for('register'))
+
+
     # Check if file exists
     if os.path.exists('registrations.json'):
         with open('registrations.json', 'r') as file:
             data = json.load(file)
     else:
         data = []
+
     # Add the new registration
     data.append({'name': name, 'country': country, 'age': age, 'gender': gender, 'date_of_birth': date_of_birth, 'phone_number': phone_number, 'family_size': family_size, 'medical_con': medical_con})
 
